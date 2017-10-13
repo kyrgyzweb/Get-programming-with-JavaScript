@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+var buildPlanet;
+var getPlanetInfo;
+var planet1;
+var planet2;
+
+buildPlanet = function(name, position, type, radius, rank) {
+  
+  return {
+    name: name,
+    position: position,
+    type: type,
+    radius: radius,
+    sizeRank: rank
+  };
+};
+
+getPlanetInfo = function(planet) {
+  return planet.name.toUpperCase() + ": planet " + planet.position;
+}
+
+planet1 = buildPlanet("Jupiter", 5, "Giant Gaz", 69911, 1);
+
+document.write(getPlanetInfo(planet1));
+</script>
+
+
+
+<script id="jsbin-source-javascript" type="text/javascript">var buildPlanet;
+var getPlanetInfo;
+var planet1;
+var planet2;
+
+buildPlanet = function(name, position, type, radius, rank) {
+  
+  return {
+    name: name,
+    position: position,
+    type: type,
+    radius: radius,
+    sizeRank: rank
+  };
+};
+
+getPlanetInfo = function(planet) {
+  return planet.name.toUpperCase() + ": planet " + planet.position;
+}
+
+planet1 = buildPlanet("Jupiter", 5, "Giant Gaz", 69911, 1);
+
+document.write(getPlanetInfo(planet1));</script></body>
+</html>
